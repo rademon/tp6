@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="javascript">
+function f_age() {
+var test =document. age.input.value;
+document.age.output.value=test
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<FORM NAME="age">
+<INPUT TYPE="date" id="date" NAME="input" pattern="[\d][\d]/[\d][\d]/[\d][\d][\d][\d]" VALUE="" onkeypress="return touche(entrer)"> Date de naissance format (jj/mm/aaaa) <BR>
+<INPUT TYPE="text" id="age" NAME="output" VALUE=""> Age
+
+ <script>
+function age(id)
+{
+    var n=document.getElementById("date").value;
+    if (n.length < 1)
+    {
+        window.alert("Le champ est vide.");
+        return false;
+    }
+}
+  function touche(entrer) {
+    if (e.keyCode == 13) {
+        var tb = document.getElementById("age");
+        eval(tb.value);
+        return false;
+    }
+}
+</script>
+</FORM>
+</BODY>
+</HTML>
